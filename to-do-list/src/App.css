@@ -1,0 +1,86 @@
+.App {
+  text-align: left;
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 150px;
+}
+.App div{
+    width:1100px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+h1{
+  font-size:50px;
+  text-align:center;
+}
+h2{
+
+  text-align:center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+}
+button{
+  position: relative;
+  top:50px;
+  width:80px;
+  text-align: center;
+  margin-left:510px;
+}
+/* MainPage */
+.MainPage ul{
+  margin-left:200px;
+}
+.MainPage h3{
+  margin-left:220px;
+}
+/* Reviews Section */
+   .Reviews{
+    background-color:rgba(23, 192, 40, 0.798);
+    height:120vh;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .EachReview{
+    height:60vh;
+  }
+  .EachReview h2{
+    width:700px;
+    margin-left:200px;
+  }
+  .Reviews h3{
+    text-align:center;
+  }
