@@ -1,14 +1,8 @@
 .App {
-  text-align: left;
-  margin-bottom:0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 150px;
+  text-align: center;
 }
-.App div{
-}
-/* .App-logo {
+
+.App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -17,7 +11,7 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-} */
+}
 
 .App-header {
   background-color: #282c34;
@@ -41,14 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-h1{
-  font-size:50px;
-  text-align:center;
-}
-h2{
-
-  text-align:center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 35px;
 }

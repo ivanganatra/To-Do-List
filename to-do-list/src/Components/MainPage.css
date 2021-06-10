@@ -1,0 +1,33 @@
+.MainPage{
+    /* background-color: antiquewhite; */
+    width:200vh;
+    height:110vh;
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+}
+.MainPage div{
+    width:100vh;
+    height:90vh;
+}
+.block-left{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-left h1{
+    font-weight: 500;
+    color: black;
+    font-size:50px;
+    padding-bottom: 120px;
+}
+#heading{
+    position:relative;
+}
+#front-background{
+    width:100vh;
+    height:90vh;
+    position: relative;
+    border-radius: 20px;
+}

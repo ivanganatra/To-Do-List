@@ -1,9 +1,15 @@
 import React from 'react'
-const MainPage=()=>{
-    return(
-            <div className="MainPage">
-                <h1>TodoList Website Page-1</h1>
-                <br></br>
+import './MainPage.css'
+const MainPage = () => {
+    return (
+        <div className="MainPage">
+            <div class="block-left">
+                <h1 id="heading">Design Your List</h1>
+            </div>
+            <div class="block-right">
+                <img id="front-background" src='./img/to.jpg'/>
+            </div>
+            {/* <br></br>
                 <br></br>
                 <br></br>
                 <br></br>
@@ -16,8 +22,8 @@ const MainPage=()=>{
                     <li>Login</li>
                     <li>Sign Up</li>
                     <li>Logo</li>
-                </ul>
-            </div>
+                </ul> */}
+        </div>
     );
 }
 export default MainPage

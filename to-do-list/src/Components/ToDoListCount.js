@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './ToDoListCount.css'
 class Counter extends Component {
     constructor(props) {
         super(props)
@@ -65,7 +65,8 @@ class Counter extends Component {
     render() {
         return (
             <div className="ToDoList">
-                <h2>Number of TodoList Created On This App</h2> -<h1>{this.state.counter}</h1>
+                <h2>Number of TodoList Created On This App</h2>
+                <h1>{this.state.counter}</h1>
                 <button onClick={()=>{this.increment(100)}}>Increment</button>
             </div>
         )
