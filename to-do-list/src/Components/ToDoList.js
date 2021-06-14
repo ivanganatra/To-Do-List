@@ -1,47 +1,63 @@
 import React from 'react'
 import './ToDoList.css'
-const list=["Hotel","Restaurant","Task1","Task2","Task3"];
+let list=[];
+var eachitem;
+for(eachitem=1;eachitem<=3;eachitem++)
+{
+    list.push('Task '+ eachitem);
+}
+//on hovering I want that edit icon should appear
 class ToDoList extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-             todos:["1","2","3","4"],
+             todos:[],
+             isClicked:"false"
         }
         this.changetodos=this.changetodos.bind(this);
         this.listitems=this.listitems.bind(this);
+        this.addNewItem=this.addNewItem.bind(this);
+        // this.buttonDisabled=this.buttonDisabled.bind(this);
         // this.changeLoopCounter=this.changeLoopCounter.bind(this);
     }
     changetodos(event,id){
-        console.log(this.state.todos[1],this.state.todos[2]);
         const newtodos=this.state.todos;
         newtodos[id]=event.target.value;
         this.setState({todos:newtodos});
     }
-    // changeLoopCounter(){
-    //     this.setState((prevState)=>
-    //     {
-    //         return {loop:prevState.loop+1};
-    //     });
-    // }
-    listitems(placeholder,id)
+    //Move the mouse hover on icon, editing rights of input shall open
+    listitems(id)
     {
+        const placeholder='Task '+(id+1);
         return(
-            <input className={id} type="text" value={this.state.todos[id]} placeholder={placeholder} onChange={(event)=>{this.changetodos(event,id)}}/>
+            <div class='each-task'>
+              <input className={id} type="text" value={placeholder} placeholder={placeholder} onChange={(event)=>{this.changetodos(event,id)}}/>
+              <button class="icon">
+                    <img class="drawIcon" src="./img/drawIcon.png" onMouseOver={(event)=>{this.changetodos(event,id)}}></img>
+              </button>
+            </div>
         );
+    }
+    addNewItem()
+    {
+        const id=this.state.todos.length;
+        let newtodo=this.state.todos;
+        newtodo.push("");
+        this.setState({todos:newtodo});
+        console.log(this.state.todos);
+       // return newItem;
     }
     render(){
         return (
         <div className="to-do-list">
             <div class="left-list">
-                <div class="list">
+                <div class="list" >
+                <button  type="submit" class="add-btn" onClick={this.addNewItem}>New-button</button>
                 {
-                    list.map((value,index)=>{
-                        return this.listitems(value,index);
+                    this.state.todos.map((value,index)=>{
+                        return this.listitems(index);
                     })
                 }
-                    <li>Flight</li>
-                    <li>Car Rental</li>
-                    <li>Tours</li>
                 </div>
             </div>
             <div class="form">
@@ -52,4 +68,4 @@ class ToDoList extends React.Component{
     }
 }
 //script
-export default ToDoList
+export default ToDoList;
