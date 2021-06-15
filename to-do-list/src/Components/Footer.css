@@ -1,6 +1,9 @@
 /* Footer */
 .Footer{
-    background-color: #fff9f3;
+    position: relative;
+    top:300px;
+    background-color: #000000;
+    color:white;
 
   }
   .Footer .list-section{

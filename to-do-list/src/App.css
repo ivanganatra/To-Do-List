@@ -1,3 +1,8 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
 .App {
   text-align: left;
   margin-bottom:0px;
@@ -30,15 +35,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 h1{
   font-size:50px;

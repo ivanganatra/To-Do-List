@@ -1,5 +1,6 @@
 import React from 'react'
 import './Card.css'
+import Button from './Button.js'
 import ToDoList from './ToDoList.js'
 const Card = () => {
     return (
@@ -12,6 +13,7 @@ const Card = () => {
                 <div class="Card-area">
                     <div class="Card-1">
                         <div class="header">
+                            <Button />
                             <div>Jonane Doe</div>
                             <div class="urgency"></div>
                         </div>
