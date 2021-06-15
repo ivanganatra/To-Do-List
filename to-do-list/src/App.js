@@ -9,7 +9,7 @@ import MainPage from './Components/MainPage.js'
 import Parent from './Components/Parent.js'
 import Footer from './Components/Footer.js'
 import Navbar from './Components/Navbar.js'
-import ToDoList from './Components/ToDoList.js'
+// import ToDoList from './Components/ToDoList.js'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Card from './Components/Card.js'
 import Section1 from './Components/MainPage/section-1.js'
@@ -23,17 +23,19 @@ function App() {
         <Router>
             <div className="App">
                 <Route component={Navbar}/>
-                <Section1 />
-                <Section2 />
-                <Section3 />
-                <Section4 />
-                <Section5 />
-                {/* <Section5 /> */}
-                {/* <Route component={ToDoList}/> */}
-                {/* <Route component={Card}/> */}
                 <Switch>
-                    {/* <Route exact path='/'
-                        component={MainPage}/> */}
+                    <Route exact path='/'
+                       render={props =>
+                        <div>
+                            <Section1 />
+                            <Section2 />
+                            <Section3 />
+                            <Section4 />
+                            <Section5 />
+                        </div>
+                      }>
+                    </Route>
+                    <Route path='/Card' component={Card}/>
                     <Route path='/Reviews'
                         component={Reviews}/>
                     <Route path='/ToDoListCounter'

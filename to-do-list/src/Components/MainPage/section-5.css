@@ -11,7 +11,7 @@
     height:600px;
     color:white;
     padding:50px;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .section-5 .heading{
     font-size: 60px;
@@ -46,4 +46,11 @@
     left:0px;
     color: white;
     background-color: #0b0b0b;
+}
+.counter{
+    text-align: center;
+    font-size: 10vw;
+    color: blueviolet;
+    font-family:monospace;
+    font-weight: bold;
 }

@@ -12,7 +12,8 @@ class Button extends React.Component{
         super(props);
         this.state = {
              todos:[],
-             isClicked:"false"
+             isClicked:"false",
+             enabled:-1
         }
         this.changetodos=this.changetodos.bind(this);
         this.listitems=this.listitems.bind(this);
@@ -24,6 +25,13 @@ class Button extends React.Component{
         const newtodos=this.state.todos;
         newtodos[id]=event.target.value;
         this.setState({todos:newtodos});
+        console.log(this.state.enabled);
+    }
+    changetodos1(event,id){
+        const newtodos=this.state.todos;
+        newtodos[id]=event.target.value;
+        this.setState({todos:newtodos,enabled:id});
+        console.log(this.state.enabled);
     }
     //Move the mouse hover on icon, editing rights of input shall open
     listitems(id)
@@ -31,7 +39,7 @@ class Button extends React.Component{
         const placeholder='Task '+(id+1);
         return(
             <div class='each-task'>
-              <input className={id} type="text" value={placeholder} placeholder={placeholder} onChange={(event)=>{this.changetodos(event,id)}}/>
+              <input className={id} type="text"  placeholder={placeholder} onChange={(event)=>{this.changetodos(event,id)}}/>
               <button class="icon">
                     <img class="drawIcon" src="./img/drawIcon.png" onMouseOver={(event)=>{this.changetodos(event,id)}}></img>
               </button>
@@ -53,7 +61,12 @@ class Button extends React.Component{
                 <button  type="submit" class="add-btn" onClick={this.addNewItem}>Add Task</button>
                 {
                     this.state.todos.map((value,index)=>{
-                        return this.listitems(index);
+                        return   <div class='each-task'>
+                        <input type="text" placeholder={'Task '+index} onChange={(event)=>{this.changetodos(event,index)}} onClick={(event)=>{this.changetodos1(event,index)}}/>
+                        <button  className={this.state.enabled==index?"iconh":"icon"} >
+                              <img className={this.state.enabled==index?"drawIconh":"drawIcon"} src="./img/drawIcon.png"  onMouseOver={(event)=>{this.changetodos(event,index)}}></img>
+                        </button>
+                      </div>;
                     })
                 }
             </div>

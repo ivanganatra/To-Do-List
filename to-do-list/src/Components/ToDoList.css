@@ -7,91 +7,9 @@
 .left-list{
 
     width:14.2vw;
-    height:fit-content;
+    height:200vh;
     background-color: black;
     color:white;
     margin-left:20px;
     word-spacing: 2px;
-    padding:10px;
-    margin-top: 80px;
-}
-.list{
-    font-size: 22px;
-    padding: 0px;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    background-color: black;
-    flex-direction: column;
-    row-gap: 15px;
-}
-/* //Practice name and email */
-.list .each-task{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-}
-.left-list .list input{
-    background-color: rgb(38, 31, 31);
-    padding:8px;
-    width:120px;
-    margin-left:0px;
-    color:aliceblue;
-    transform:translateZ(300px);
-}
-/* //Div of icon */
-.icon{
-    width:30px;
-    height:35px;
-    background-color: #0088fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left-color: rgb(66, 57, 57);
-    z-index:1;
-}
-.drawIcon{
-    /* display: none; */
-    visibility: hidden;
-    width:20px;
-    height:20px;
-    background-color: rgb(38, 31, 31);
-    border-radius: 3px;
-}
-.each-task:hover .input{
-    animation: animate 10ms ease-in-out ;
-    color:black;
-    animation-fill-mode:forwards;
-
-}
-.each-task:hover .icon{
-    visibility: visible;
-    background-color: rgb(38, 31, 31);
-}
-.each-task:hover .drawIcon{
-    visibility: visible;
-}
-@keyframes animate{
-    0%{
-        background-color: black;
-    }
-    100%{
-        background-color: rgb(255, 255, 255);
-        color:black;
-        font-size: 15px;
-
-    }
-}
-/* Button */
-.add-btn{
-    text-align: center;
-    font-size: 15px;
-    width:120px;
-    height:30px;
-    padding: 0px;
-    list-style: none;
-    background-color: black;
-    color: aliceblue;
-    row-gap: 15px;
 }

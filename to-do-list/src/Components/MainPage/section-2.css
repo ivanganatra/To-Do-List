@@ -15,7 +15,10 @@
     position: relative;
     left:0px;
 }
-.paragraph{
+.section-2 .paragraph{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     font-weight:360;
     word-wrap: normal;
