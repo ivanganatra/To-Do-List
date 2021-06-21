@@ -1,25 +1,50 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Greet from './Components/Component.js'
+import {Components} from './Components/Component.js'
+import Welcome from './Components/Welcome.js'
+import Reviews from './Components/Reviews.js'
+import ToDoListCounter from './Components/ToDoListCount.js'
+import MainPage from './Components/MainPage.js'
+import Parent from './Components/Parent.js'
+import Footer from './Components/Footer.js'
+import Navbar from './Components/Navbar.js'
+// import ToDoList from './Components/ToDoList.js'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Card from './Components/Card.js'
+import Section1 from './Components/MainPage/section-1.js'
+import Section2 from './Components/MainPage/section-2.js'
+import Section3 from './Components/MainPage/section-3.js'
+import Section4 from './Components/MainPage/section-4.js'
+import Section5 from './Components/MainPage/section-5.js'
+// npm install react-router-dom
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Route component={Navbar}/>
+                <Switch>
+                    <Route exact path='/'
+                       render={props =>
+                        <div>
+                            <Section1 />
+                            <Section2 />
+                            <Section3 />
+                            <Section4 />
+                            <Section5 />
+                        </div>
+                      }>
+                    </Route>
+                    <Route path='/Card' component={Card}/>
+                    <Route path='/Reviews'
+                        component={Reviews}/>
+                    <Route path='/ToDoListCounter'
+                        component={ToDoListCounter}/>
+                </Switch>
+                <Footer/>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
