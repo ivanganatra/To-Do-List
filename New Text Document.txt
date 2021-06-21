@@ -1,0 +1,105 @@
+import React from 'react'
+import '.Card.css'
+ import Button from '.Button.js'
+import ToDoList from '.ToDoList.js'
+const Card = () = {
+    return (
+        div class=section-card
+            ToDoList 
+            div className=Cards 
+                div class=block-left
+                    h1 id=headingDesign Your Listh1
+                div
+                div class=Card-area
+                    div class=Card-1
+                        div class=header
+                            divJonane Doediv
+                                form class=form  for=cars
+                                select id=cars name=cars
+                                    option value=volvoVery Urgentoption
+                                    option value=saabUrgentoption
+                                    option value=fiatImportantoption
+                                    option value=audiLast Choiceoption
+                                select
+                                form
+                         div
+                        div class=content
+                            p class=paragraphOccaecat excepteur labore cillum non sit commodo esse elit nulla. Proident dolor dolore amet ad adipisicing adipisicing mollit ea magna deserunt elit veniam deserunt. Labore ipsum sint dolore duis fugiat consequat occaecat. Fugiat sint est non laborum incididunt culpa non dolore.
+                            p
+                        div
+                    div
+                    div class=Card-1
+                        div class=header
+                            divJonane Doediv
+                                form class=form  for=cars
+                                select id=cars name=cars
+                                    option value=volvoVery Urgentoption
+                                    option value=saabUrgentoption
+                                    option value=fiatImportantoption
+                                    option value=audiLast Choiceoption
+                                select
+                                form
+                         div
+                        div class=content
+                            p class=paragraphOccaecat excepteur labore cillum non sit commodo esse elit nulla. Proident dolor dolore amet ad adipisicing adipisicing mollit ea magna deserunt elit veniam deserunt. Labore ipsum sint dolore duis fugiat consequat occaecat. Fugiat sint est non laborum incididunt culpa non dolore.
+                            p
+                        div
+                    div
+                    div class=Card-1
+                        div class=header
+                            divJonane Doediv
+                                form class=form  for=cars
+                                select id=cars name=cars
+                                    option value=volvoVery Urgentoption
+                                    option value=saabUrgentoption
+                                    option value=fiatImportantoption
+                                    option value=audiLast Choiceoption
+                                select
+                                form
+                         div
+                        div class=content
+                            p class=paragraphOccaecat excepteur labore cillum non sit commodo esse elit nulla. Proident dolor dolore amet ad adipisicing adipisicing mollit ea magna deserunt elit veniam deserunt. Labore ipsum sint dolore duis fugiat consequat occaecat. Fugiat sint est non laborum incididunt culpa non dolore.
+                            p
+                        div
+                    div
+                    div class=Card-1
+                        div class=header
+                            divJonane Doediv
+                                form class=form  for=cars
+                                select id=cars name=cars
+                                    option value=volvoVery Urgentoption
+                                    option value=saabUrgentoption
+                                    option value=fiatImportantoption
+                                    option value=audiLast Choiceoption
+                                select
+                                form
+                         div
+                        div class=content
+                            p class=paragraphOccaecat excepteur labore cillum non sit commodo esse elit nulla. Proident dolor dolore amet ad adipisicing adipisicing mollit ea magna deserunt elit veniam deserunt. Labore ipsum sint dolore duis fugiat consequat occaecat. Fugiat sint est non laborum incididunt culpa non dolore.
+                            p
+                        div
+                    div
+                    div class=Card-1
+                        div class=header
+                            divJonane Doediv
+                                form class=form  for=cars
+                                select id=cars name=cars
+                                    option value=volvoVery Urgentoption
+                                    option value=saabUrgentoption
+                                    option value=fiatImportantoption
+                                    option value=audiLast Choiceoption
+                                select
+                                form
+                         div
+                        div class=content
+                            p class=paragraphOccaecat excepteur labore cillum non sit commodo esse elit nulla. Proident dolor dolore amet ad adipisicing adipisicing mollit ea magna deserunt elit veniam deserunt. Labore ipsum sint dolore duis fugiat consequat occaecat. Fugiat sint est non laborum incididunt culpa non dolore.
+                            p
+                        div
+                    div
+
+                div
+            div
+        div
+    );
+}
+export default Card;
