@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Modal from "react-modal";
 import './Navbar.css';
+import {Link} from 'react-scroll'
 class Navbar extends React.Component {
   constructor(props) {
     super(props);

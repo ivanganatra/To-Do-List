@@ -4,7 +4,7 @@
     flex-direction: row;
     column-gap: 200px;
 }
-.left-list{
+.to-do-list .left-list{
 
     width:14.2vw;
     height:200vh;

@@ -14,7 +14,7 @@ class Counter extends Component {
         setTimeout(function() { //Start the timer
 
             this.setState({render: true}) //After 1 second, set render to true
-        }.bind(this), 1000)
+        }.bind(this), 5000)
     }
     oneincrement(){
         this.componentDidMount();

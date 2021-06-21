@@ -9,7 +9,7 @@ const section_1 = () => {
                 OmniFocus
                 </span>
                 <div class="phrase">Accomplish more every day</div>
-                <button class="btn-create-list"><a href=".section-2">Design Your TodoList</a></button>
+                <button class="btn-create-list"><a href="Card">Design now</a></button>
                 <br></br>
                 {/* <img src="./../../img/drawicon.png"></img> */}
             </div>

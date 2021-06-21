@@ -22,6 +22,7 @@ function App() {
     return (
         <Router>
             <div className="App">
+            <meta name="viewport" content="width=device-width,initial-scale=1"/>
                 <Route component={Navbar}/>
                 <Switch>
                     <Route exact path='/'
