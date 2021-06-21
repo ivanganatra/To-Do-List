@@ -1,9 +1,9 @@
 .nav{
     display: flex;
     color: white;
-     width: 100%;
+   width: 100vw;
      background-color: rgb(38, 31, 31);
-     font-size: 1vw;
+    font-size: 1vw;
      font-weight: bold,
    }
    .each-task:hover .input{
@@ -30,9 +30,10 @@
        margin-left:24.5vw;
        background-color:#eeebec;
        border-radius: 6px;
-       margin-top:-2vw;
+       margin-top:-1.4vw;
        position:absolute;
        opacity: 0.9;
+       z-index: 2;
    }
    @keyframes animate{
        from{
