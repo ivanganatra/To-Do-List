@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 /* //Section-1 */
+/* //Kya ye changes dikh rahe hai??? */
 .section-3{
     background-color: black;
     position: relative;
     margin-left: 0px;
     height:600px;
     color:white;
-    padding:50px;
     padding-top: 50px;
 }
 .section-3 .heading{
@@ -28,17 +28,20 @@
     width:fit-content;
 } */
 .section-3 .list{
+
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-column-gap:20px;
-    margin-left: 40px;
+    /* grid-column-gap:20px; */
+    justify-items: end;
 }
 .section-3 .list .paragraph{
     word-wrap: normal;
-    width:300px;
-    height:200px;
-    font-size: 20px;
+    width:19vw;
+    height:18vw;
+    font-size: 1vw;
     left:0px;
     color: white;
     background-color: #0b0b0b;
+    border: 6px solid white;
+    border-radius: 30%;
 }
