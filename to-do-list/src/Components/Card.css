@@ -1,0 +1,84 @@
+.section-card{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: visible;
+}
+.section-card .Cards{
+    width:100%;
+    height: 100%;
+    margin-left: 2vw;
+    display: grid;
+    padding-top: 5vh;
+    grid-template-rows:1% 99%;
+}
+.section-card .Card-area{
+    width:90%;
+    background-color:rgb(220, 220, 220);
+    padding:5vh;
+    display: grid;
+    box-shadow: 3px 3px 2vw rgb(0, 0, 0);
+    grid-template-columns:  minmax(0, 1fr);
+    grid-column-gap:10%;
+    grid-row-gap:10%;
+}
+.section-card .Card-1{
+    width:70vw;
+    height:10vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 6px rgb(139, 139, 139);
+    display:grid;
+    grid-template-rows:  30% 70%;
+}
+.section-card .header{
+    font-size: 2vw;
+    display: grid;
+    grid-template-columns:  80% 20%;
+    text-align: center;
+    background-color: rgb(186, 179, 179);
+    color: black;
+}
+.section-card .Card-1 .form {
+    width:100%;
+    height:100%;
+    font-size: 1vw;
+    text-align: center;
+}
+.section-card .Card-1 .form select{
+    width:100%;
+    height:100%;
+}
+.section-card .paragraph{
+    width:100%;
+    height: 100%;
+    /* padding:1%; */
+    font-size: 1vw;
+    text-align: center;
+    background-color: white;
+    color:black;
+}
+
+/* Button */
+.section-card .add-btn{
+    text-align: center;
+    font-size: 15px;
+    width:120px;
+    height:30px;
+    padding: 0px;
+    list-style: none;
+    background-color: black;
+    color: aliceblue;
+    row-gap: 15px;
+}
+@media screen and (max-width:480px){
+    .section-card{
+        background-color: lightgreen;
+    }
+    .section-card .Card-1{
+        min-width:60vw;
+        height:30vw;
+    }
+}

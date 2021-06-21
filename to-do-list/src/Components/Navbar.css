@@ -1,0 +1,44 @@
+.nav{
+    display: flex;
+    color: white;
+     width: 100%;
+     background-color: rgb(38, 31, 31);
+     font-size: 1vw;
+     font-weight: bold,
+   }
+   .each-task:hover .input{
+       animation: animate 10ms ease-in-out ;
+       color:black;
+       animation-fill-mode:forwards;
+   }
+    .each-task{
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+
+   }
+   .navbar input{
+       background-color: rgb(38, 31, 31);
+       padding:8px;
+       width:120px;
+       margin-left:0px;
+       color:aliceblue;
+       transform:translateZ(300px);
+   }
+   .navbar{
+       text-align:left;
+       margin-left:24.5vw;
+       background-color:#eeebec;
+       border-radius: 6px;
+       margin-top:-2vw;
+       position:absolute;
+       opacity: 0.9;
+   }
+   @keyframes animate{
+       from{
+           opacity:0%;
+       }
+       to{
+           opacity:100%;
+       }
+   }
