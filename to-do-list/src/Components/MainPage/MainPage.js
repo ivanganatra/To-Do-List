@@ -1,10 +1,9 @@
 import React from 'react'
-import './MainPage/section-1.css'
-import Section1 from './MainPage/section-1.js'
-import Section2 from './MainPage/section-2.js'
-import Section3 from './MainPage/section-3.js'
-import Section4 from './MainPage/section-4.js'
-import Section5 from './MainPage/section-5.js'
+import Section1 from './Section-1/section-1.js'
+import Section2 from './Section-2/section-2.js'
+import Section3 from './Section-3/section-3.js'
+import Section4 from './Section-4/section-4.js'
+import Section5 from './Section-5/section-5.js'
 const MainPage = () => {
     return (
         <div className="MainPage">
