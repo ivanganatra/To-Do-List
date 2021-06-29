@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ivanganatra/To-Do-List.git/static/css/main.362c3899.chunk.css",
+    "main.js": "/ivanganatra/To-Do-List.git/static/js/main.d1192f99.chunk.js",
+    "main.js.map": "/ivanganatra/To-Do-List.git/static/js/main.d1192f99.chunk.js.map",
+    "runtime-main.js": "/ivanganatra/To-Do-List.git/static/js/runtime-main.7d87dbc3.js",
+    "runtime-main.js.map": "/ivanganatra/To-Do-List.git/static/js/runtime-main.7d87dbc3.js.map",
+    "static/js/2.6c85cf8f.chunk.js": "/ivanganatra/To-Do-List.git/static/js/2.6c85cf8f.chunk.js",
+    "static/js/2.6c85cf8f.chunk.js.map": "/ivanganatra/To-Do-List.git/static/js/2.6c85cf8f.chunk.js.map",
+    "static/js/3.3b246b53.chunk.js": "/ivanganatra/To-Do-List.git/static/js/3.3b246b53.chunk.js",
+    "static/js/3.3b246b53.chunk.js.map": "/ivanganatra/To-Do-List.git/static/js/3.3b246b53.chunk.js.map",
+    "index.html": "/ivanganatra/To-Do-List.git/index.html",
+    "static/css/main.362c3899.chunk.css.map": "/ivanganatra/To-Do-List.git/static/css/main.362c3899.chunk.css.map",
+    "static/js/2.6c85cf8f.chunk.js.LICENSE.txt": "/ivanganatra/To-Do-List.git/static/js/2.6c85cf8f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/ivanganatra/To-Do-List.git/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7d87dbc3.js",
+    "static/js/2.6c85cf8f.chunk.js",
+    "static/css/main.362c3899.chunk.css",
+    "static/js/main.d1192f99.chunk.js"
+  ]
+}
