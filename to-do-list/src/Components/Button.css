@@ -1,15 +1,7 @@
-.to-do-list{
-    display: flex;
-    justify-content:left;
-    flex-direction: row;
-    column-gap: 200px;
-}
 .left-list{
     width:14.2vw;
-    height:200vh;
     background-color: black;
     color:white;
-    margin-left:20px;
     word-spacing: 2px;
 }
 .list{
@@ -21,6 +13,8 @@
     background-color: black;
     flex-direction: column;
     row-gap: 15px;
+    height: fit-content;
+    overflow-y:scroll;
 }
 /* //Practice name and email */
 .list .each-task{
@@ -41,7 +35,7 @@
 .icon{
     width:30px;
     height:35px;
-    background-color: #0088fa;
+    background-color: rgba(255, 255, 255, 0.857);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +47,6 @@
     visibility: hidden;
     width:20px;
     height:20px;
-    background-color: rgb(38, 31, 31);
     border-radius: 3px;
 }
 .each-task:hover .input{
@@ -62,7 +55,6 @@
     animation-fill-mode:forwards;
 }
 .each-task:hover .icon{
-    background-color: rgb(38, 31, 31);
 }
 .each-task:hover .drawIcon{
     visibility: visible;
@@ -71,7 +63,7 @@
     border-radius: 4px;
     width:30px;
     height:35px;
-    background-color: #ffffff;
+    background-color: #fffcfc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,6 +92,7 @@
 /* Button */
 .add-btn{
     text-align: center;
+    margin-top: 1vw;
     font-size: 15px;
     width:120px;
     height:30px;

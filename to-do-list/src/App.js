@@ -11,7 +11,7 @@ import Footer from './Components/Footer.js'
 import Navbar from './Components/Navbar.js'
 // import ToDoList from './Components/ToDoList.js'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Card from './Components/Card.js'
+import Todo_Card from './Components/Todo-Card.js'
 import Section1 from './Components/MainPage/section-1.js'
 import Section2 from './Components/MainPage/section-2.js'
 import Section3 from './Components/MainPage/section-3.js'
@@ -36,13 +36,13 @@ function App() {
                         </div>
                       }>
                     </Route>
-                    <Route path='/Card' component={Card}/>
+                    <Route path='/Card' component={Todo_Card}/>
                     <Route path='/Reviews'
                         component={Reviews}/>
                     <Route path='/ToDoListCounter'
                         component={ToDoListCounter}/>
                 </Switch>
-                <Footer/>
+                {/* <Footer/> */}
             </div>
         </Router>
     );

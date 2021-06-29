@@ -11,11 +11,9 @@ class ToDoList extends React.Component{
     }
     render(){
         return (
-        <div className="to-do-list">
             <div class="left-list">
                 <Button />
             </div>
-        </div>
         )
     }
 }

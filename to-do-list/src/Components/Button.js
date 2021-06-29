@@ -63,9 +63,9 @@ class Button extends React.Component{
                     this.state.todos.map((value,index)=>{
                         return   <div class='each-task'>
                         <input type="text" placeholder={'Task '+index} onChange={(event)=>{this.changetodos(event,index)}} onClick={(event)=>{this.changetodos1(event,index)}}/>
-                        <button  className={this.state.enabled==index?"iconh":"icon"} >
+                        <div  className={this.state.enabled==index?"iconh":"icon"} >
                               <img className={this.state.enabled==index?"drawIconh":"drawIcon"} src="./img/drawIcon.png"  onMouseOver={(event)=>{this.changetodos(event,index)}}></img>
-                        </button>
+                        </div>
                       </div>;
                     })
                 }
