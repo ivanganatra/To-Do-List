@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 /* //Section-1 */
+/* //Kya ye changes dikh rahe hai??? */
 .section-3{
     background-color: black;
-    position: relative;
     margin-left: 0px;
-    height:600px;
+    height:auto;
     color:white;
     padding-top: 50px;
+    padding-bottom: 80px;
 }
 .section-3 .heading{
     font-size: 60px;
@@ -27,20 +28,30 @@
     width:fit-content;
 } */
 .section-3 .list{
-    
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
+
+    display: flex;
     /* grid-column-gap:20px; */
-    justify-items: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+/* @media screen and (max-width:800px){
+    .section-3 .list{
+        display: block;
+        justify-content: center;
+    }
+ 
+} */
 .section-3 .list .paragraph{
     word-wrap: normal;
-    width:19vw;
-    height:18vw;
-    font-size: 1vw;
+    width:34vh;
+    height:32vh;
+    padding: 4vh;
+    font-size: 2vh;
     left:0px;
     color: white;
     background-color: #0b0b0b;
     border: 6px solid white;
     border-radius: 30%;
+    margin: 20px;
 }

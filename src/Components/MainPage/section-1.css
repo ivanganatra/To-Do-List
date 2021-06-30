@@ -5,13 +5,14 @@
 }
 /* //Section-1 */
 .section-1{
-    position: relative;
+    position: absolute;
     background-color: black;
     margin-left: 0px;
-    height:600px;
+    height:70vh;
+    width: 100vw;
+    margin-top: 62px;
     color:white;
-    padding:150px;
-    padding-top: 50px;
+    padding-top: 10vh;
 }
 .section-1 .heading{
     font-size: 40px;
@@ -29,6 +30,8 @@
     padding: 10px;
     position: relative;
     width:fit-content;
+    box-shadow:0px 1px 2px white;
+    z-index: 1;
 }
 .section-1 button a{
     color:black;

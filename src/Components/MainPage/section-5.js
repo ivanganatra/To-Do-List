@@ -5,16 +5,18 @@ class section_5 extends React.Component{
         super(props);
         this.state = {
             counter:0,
+            speed:100
         }
     }
     componentDidMount() {
         this.timer =
-           setInterval(() => {this.setState({counter:this.state.counter+1
+           setInterval(() => {this.setState({counter:this.state.counter+1, speed:this.state.speed-200
           })
           if(this.state.counter===200){
-            clearInterval(this.timer);
+                clearInterval(this.timer);
           }
-        }, 100);
+          console.log(this.state.speed);
+        }, this.state.speed);
       }
     render(){
         return (

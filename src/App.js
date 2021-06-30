@@ -22,12 +22,12 @@ function App() {
     return (
         <Router>
             <div className="App">
+            <meta name="viewport" content="width=device-width,initial-scale=1"/>
                 <Route component={Navbar}/>
                 <Switch>
                     <Route exact path='/'
                        render={props =>
                         <div>
-                            <Section1 />
                             <Section2 />
                             <Section3 />
                             <Section4 />

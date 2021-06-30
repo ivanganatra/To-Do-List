@@ -3,17 +3,16 @@
     color:black;
     z-index: 1;
     text-align: center;
-    padding-top: 100px;
-    height:500px;
+    height:60vh;
+    padding-top: 10vh;
  }
  .section-2 .heading{
     font-family: quatro,sans-serif;
     font-size: 50px;
     font-weight:600;
-    width:800px;
     color:#444;
-    position: relative;
-    left:0px;
+    text-align: left;
+    margin-left: 16vw;
 }
 .section-2 .paragraph{
     display: inline-flex;

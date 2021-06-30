@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Modal from "react-modal";
 import './Navbar.css';
+import './MainPage/section-1.css'
+import Section1 from './MainPage/section-1.js'
+
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -34,7 +37,7 @@ class Navbar extends React.Component {
 }
   render() {
     return (
-      <div> <div style={{ display: 'flex', width: '100vw', backgroundColor: '#0b0b0b', fontSize: '1vw', fontWeight: 'bold',color:'white' }}>
+      <div className="top"> <div style={{ position:"absolute",display: 'flex', width: '100vw', backgroundColor: '#0b0b0b', fontSize: '2vh', fontWeight: 'bold',color:'white',height:'10vh' }}>
         <div style={{ display: 'flex' }}><div style={{ marginTop: '1.5vw', marginBottom: '1.5vw', marginLeft: '10vw', cursor: 'pointer' }}>Home</div>
           <div style={{ marginTop: '1.5vw', marginBottom: '1.5vw', marginLeft: '10vw', cursor: 'pointer' }} onClick={(e) => this.togglePanel(e)}>Your Todos</div></div>
         <div style={{ display: 'flex', marginLeft: 'auto' }}> <div style={{ marginTop: '1.5vw', marginBottom: '1.5vw', marginRight: '10vw', cursor: 'pointer' }} onClick={(e) => this.toggleLogin(e)}>Login</div>
@@ -158,6 +161,7 @@ class Navbar extends React.Component {
             }} />
           </div>
         </Modal>
+        <Section1/>
       </div>);
   }
 }
