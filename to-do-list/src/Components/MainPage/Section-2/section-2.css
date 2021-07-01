@@ -1,0 +1,30 @@
+.section-2{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    z-index: 1;
+    text-align: center;
+    height:35vw;
+    padding-top: 10vh;
+ }
+ .section-2 .heading{
+    font-family: quatro,sans-serif;
+    font-size: 50px;
+    font-weight:600;
+    color:#444;
+    text-align: left;
+    margin-left: 16vw;
+}
+.section-2 .paragraph{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-weight:360;
+    word-wrap: normal;
+    width:800px;
+    position: relative;
+    left:-90px;
+    font-size: 30px;
+    text-align: left;
+    background-color: white;
+ }

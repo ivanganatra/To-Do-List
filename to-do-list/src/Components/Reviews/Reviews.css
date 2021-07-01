@@ -1,0 +1,46 @@
+/* Reviews Section */
+.Reviews{
+    position: relative;
+    width: 100vw;
+    height:33vw;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .EachReview {
+    width:75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+  }
+  .EachReview h1{
+    font-family: quatro,sans-serif;
+    font-size: 50px;
+    font-weight:600;
+    color:#444;
+  }
+  .EachReview h2 {
+    width:60%;
+  }
+  .EachReview h3 {
+    width:10%;
+    text-align: center;
+  }
+  .EachReview h2{
+    font-family: quatro,sans-serif;
+    font-weight: 360;
+  }
+  .Reviews .Buttons{
+    align-self: center;
+    position:relative;
+    justify-content: center;
+  }
+  .Reviews .Buttons button:nth-child(2){
+      position:relative;
+      left:10px;
+  }
