@@ -1,10 +1,10 @@
-.left-list{
+.Button .left-list{
     width:14.2vw;
     background-color: black;
     color:white;
     word-spacing: 2px;
 }
-.list{
+.Button .list{
     font-size: 22px;
     padding: 0px;
     list-style: none;
@@ -17,13 +17,13 @@
     overflow-y:scroll;
 }
 /* //Practice name and email */
-.list .each-task{
+.Button .list .each-task{
     display: flex;
     justify-content: center;
     flex-direction: row;
 
 }
-.left-list .list input{
+.Button .left-list .list input{
     background-color: rgb(38, 31, 31);
     padding:8px;
     width:120px;
@@ -32,7 +32,7 @@
     transform:translateZ(300px);
 }
 /* //Div of icon */
-.icon{
+.Button .icon{
     width:30px;
     height:35px;
     background-color: rgba(255, 255, 255, 0.857);
@@ -42,24 +42,24 @@
     border-left-color: rgb(66, 57, 57);
     z-index:1;
 }
-.drawIcon{
+.Button .drawIcon{
     /* display: none; */
     visibility: hidden;
     width:20px;
     height:20px;
     border-radius: 3px;
 }
-.each-task:hover .input{
+.Button .each-task:hover .input{
     animation: animate 10ms ease-in-out ;
     color:black;
     animation-fill-mode:forwards;
 }
-.each-task:hover .icon{
+.Button .each-task:hover .icon{
 }
-.each-task:hover .drawIcon{
+.Button .each-task:hover .drawIcon{
     visibility: visible;
 }
-.iconh{
+.Button .iconh{
     border-radius: 4px;
     width:30px;
     height:35px;
@@ -70,7 +70,7 @@
     border-left-color: rgb(66, 57, 57);
     z-index:1;
 }
-.drawIconh{
+.Button .drawIconh{
      /* display: none; */
      visibility: visible;
      width:20px;
@@ -90,7 +90,7 @@
     }
 }
 /* Button */
-.add-btn{
+.Button .add-btn{
     text-align: center;
     margin-top: 1vw;
     font-size: 15px;

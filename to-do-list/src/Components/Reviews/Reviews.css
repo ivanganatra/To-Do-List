@@ -1,46 +1,53 @@
 /* Reviews Section */
 .Reviews{
+  padding-top: 3.5vw;
+  display: flex;
+  flex-direction:column;
+  min-height:35vw;
+  height: auto;
+  margin-left: 9vw;
+}
+.Reviews .review-section {
     position: relative;
     width: 100vw;
-    height:33vw;
+    height: fit-content;
     margin-bottom: 5vh;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     text-align: left;
   }
-  .EachReview {
-    width:75%;
-    height: 80%;
+  .Reviews .EachReview {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: left;
+    width:100%;
   }
-  .EachReview h1{
+  .Reviews h1{
+    text-align: left;
     font-family: quatro,sans-serif;
-    font-size: 50px;
+    font-size: 4vw;
     font-weight:600;
     color:#444;
   }
-  .EachReview h2 {
-    width:60%;
-  }
-  .EachReview h3 {
-    width:10%;
-    text-align: center;
-  }
-  .EachReview h2{
+  .Reviews .EachReview h2 {
+    width:100%;
+    font-size: 2.8vw;
     font-family: quatro,sans-serif;
     font-weight: 360;
   }
-  .Reviews .Buttons{
-    align-self: center;
-    position:relative;
-    justify-content: center;
+  .Reviews .EachReview h3 {
+    width:100%;
+    text-align: left;
+    margin-bottom: 5vw;
+    font-size: 2vw;
   }
-  .Reviews .Buttons button:nth-child(2){
-      position:relative;
-      left:10px;
+  .Reviews .Buttons button{
+    background-color: white;
+    border: none;
+    position:relative;
+    text-align: left;
+    padding-left: 2vw;
+    width:40vw;
+    height:30vw;
+    font-size: 5vw;
   }

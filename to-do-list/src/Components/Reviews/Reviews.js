@@ -7,7 +7,7 @@ class Reviews extends Component{
         this.state={
             //message is a reserve keyword
             heading:"Reviews",
-            writtenBy:"Ivan",
+            writtenBy:"Ivan Ganatra",
             reviews:"I am a software engineer, and I love to pay for things that save me from wasting my time, TodoList is my top priority.",
             Ivan:"I am a software engineer, and I love to pay for things that save me from wasting my time, TodoList is my top priority.",
             Soumya:"I am a bussinesswomen, and prioritizing the meetings is what I crave for.This app always gave me a quick overview of my scheduled meetings whole day.",
@@ -18,7 +18,7 @@ class Reviews extends Component{
     changemessage(change){
         this.setState((prevState)=>{
             let review=[this.state.Ivan,this.state.Soumya,this.state.Rahul]
-            let name=["Ivan","Saumya","Rahul"];
+            let name=["Ivan Ganatra","Saumya Mishra","Sachin Tendulkar"];
             // const store=this.name[1]
             console.log("1  "+this.state.count+" "+prevState.count+" "+change);
             let x;
@@ -36,19 +36,22 @@ class Reviews extends Component{
     }
     render(){
         // return <h1>This is the class,component.</h1>;
-        console.log(this.state.reviews)
         return (
-            <div className="Reviews">
+        <div class="Reviews">
+            <h1>{this.state.heading}</h1>
+            <div className="review-section">
+                 {/* <div className="Buttons">
+                    <button onClick={()=>this.changemessage(-1)}>&lt; </button>
+                </div> */}
                 <div className="EachReview">
-                <h1>{this.state.heading}</h1>
                     <h2>{this.state.reviews}</h2>
                     <h3>{this.state.writtenBy}</h3>
-                    <div className="Buttons">
-                        <button onClick={()=>this.changemessage(-1)}>Left </button>
-                        <button onClick={()=>this.changemessage(1)}> Right </button>
-                    </div>
+                </div>
+                <div className="Buttons">
+                    <button onClick={()=>this.changemessage(1)}> &gt; </button>
                 </div>
             </div>
+        </div>
         )
     }
 }

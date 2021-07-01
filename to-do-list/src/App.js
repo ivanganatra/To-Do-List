@@ -1,3 +1,5 @@
+//Run this code after cloning the repository, to install all used modules and libraries.
+// npm install react-scripts start react-router-dom react-scroll react-modal web-vitals
 import logo from './logo.svg';
 import './App.css';
 import Reviews from './Components/Reviews/Reviews.js'
